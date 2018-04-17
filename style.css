@@ -1,0 +1,101 @@
+@font-face {
+    font-family: 'prototype';
+    src: url('./fonts/Prototype.ttf');
+}
+
+@font-face {
+    font-family: 'arkitech';
+    src: url('./fonts/Arkitech Medium.ttf')
+}
+
+body {
+    /* box-sizing: border-box; */
+    margin: 0;
+    padding: 0;
+    min-width: 1150px;
+    background: rgba(76, 158, 230, 0.678);
+}
+
+h3 {
+    text-align: center;
+    font-family: 'prototype';
+    font-size: 1.8rem;
+    letter-spacing: 4px;
+    color: rgba(70, 70, 136, 0.849);
+}
+
+#control {
+    display: flex;
+    flex-direction: column;
+    float: left;
+    margin-left: 20px;
+    position: absolute;
+}
+
+button {
+    color: white;
+    font-size: 13px;
+    font-family: 'arkitech';
+    width: 150px;
+    height: 40px;
+    background: linear-gradient(to bottom right, rgb(211, 211, 211), rgb(143, 183, 221));
+    border: 2px solid rgba(32, 123, 209, 0.575);
+    border-radius: 4px;
+}
+
+button:hover {
+    box-shadow: 2px 2px 1px rgba(32, 123, 209, 0.473);
+}
+
+/* button:active {
+    background: black;
+} */
+
+button+button {
+    margin-top: 20px;
+}
+
+#main {
+    background: white;
+    width: 600px;
+    height: 600px;
+    border: 20px solid rgba(32, 123, 209, 0.863);
+    box-shadow: 5px 5px 4px rgba(32, 123, 209, 0.473);
+    border-radius: 20px;
+    position: relative;
+    margin: auto;
+    margin-top: 25px;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    min-width: 600px;
+}
+
+.cell {
+    box-sizing: border-box;
+    opacity: 1;
+    /* border: 1px solid rgba(117, 116, 116, 0.137); */
+}
+
+#size {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    float: left;
+    top: 350px;
+    margin-left: 20px;
+}
+
+#size h4 {
+    text-align: center;
+    color: rgba(70, 70, 136, 0.849);
+    letter-spacing: 8.5px;
+    font-family: 'prototype';
+    font-size: small;
+}
+
+.shader {
+    background: rgb(1, 1, 56);
+}
